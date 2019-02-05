@@ -1,73 +1,116 @@
-// console.log("Hello Javascript"); CtRl + /
-// Variables
-// Data types: Number, String, Boolean, Object, undefined,null,function
-// typeof
-// Functional prg lang
-// Functions are first class citizen
-// Functions: verbs
-// Operators, add, 
-// Arithmatic operators: +,-, *, /, %
-// Logical Operators
-// Conditional Operators
-// Bitwise Operators
+// Conditional statemets
+// if else, Switch, 
+// Conditionl operators (<,>,>=,<=,==,===,!=)
+// Logical Operators &&, || , !
+// ++, --
+// Arrays
+// loops
 
-var x= 20;
+var x = 10;
+var y = 20;
 
-console.log( x % 2 ); //reminder
-console.log( x % 3 );
+var z = --y;
+console.log("z,y", z, y);
 
 
-// var salary = 100;
-// var benefits = 20;
-
-// var totalSal= salary + benefits - 5 * 2 / 0.5;
+// console.log(    x <=10 && y < 20 && z<=20 && w <10   ); // short hand evaluations
+// console.log(    x <=10 || y< 20   );
 
 
-// console.log(totalSal);
+// var married=false; 
+
+// console.log("Mairred", !married );
 
 
-// function fn(){
-//     console.log("inside fn");
+/*
+  Truth Tables
 
-//     var x=0;
-//     var y=10;
+  P     Q       P&Q     P|Q     !P
+  0     0       0       0       1
+  0     1       0       1       1
+  1     0       0       1       0
+  1     1       1       1       0
 
-//     return 100;
+*/
+
+// var marks1 = 50;
+// var marks2 = 80;
+// var marks3 = 90;
+// var marks4 = 100;
+// var marks5 = 80;
+// holes 
+
+// var marks = [50, 80, 90, 100, 80]; //list, 0
+
+// marks[5]= 100;
+
+// for(var i=0;  i < marks.length; i++){
+//     console.log(  marks[i]   );
 // }
 
-// var res= fn();
+
+
+//loop variant
+// condition
+// increment
+
+//init, condition, logic, inc 
+// for ( var i=0; i<5; i++){
+//     console.log(i);
+// }
+
+
+
+//push
+
+// marks.pop();
+
+// marks.splice(2,1);
+
+// var newMarks = marks.slice(2,4);
+
+// console.log(marks);
+// console.log(newMarks);
+
+// console.log("Subject1", marks[0]);
+// console.log("Subject2", marks[1]);
+// console.log("Subject3", marks[2]);
+// console.log("Subject4", marks[3]);
+
+
+// var age = 40;
+// var age2 = 50;
+
+// var res = age == age2;
+
 // console.log(res);
 
 
-// function add(a,b){
-//     return a+b;
+
+// switch (age) {
+//     case 10:
+//         console.log("You are a kid");
+//         break;
+//     case 20:
+//         console.log("You are young");
+//         break;
+//     case 30:
+//         console.log("You are still young");
+//         break;
+//     default:
+//         console.log("You rock");
+//         break;
 // }
 
-// var res=add(10,20);
-// console.log(res);
-
-// var res2=add(20,30)
-// console.log(res2);
-
-// var res3= add(100,200);
-// console.log(res3);
-
-// var age=10;  //delcaration + initialization
-// age =20; //overriddding
-// var name = "Mujeeb";
-// var married= false;
-// var x;
-// var obj={};
-// var y=null; //bug
-
-// function fn(){
-
+// if(age==10){
+//     console.log("You are a kid");
 // }
-
-// console.log(typeof age);
-// console.log(typeof name);
-// console.log(typeof married);
-// console.log(typeof x);
-// console.log(typeof obj);
-// console.log(typeof y);
-// console.log(typeof fn);
+// else if (age == 20){
+//     console.log("You are young");
+// }
+// else if(age==30){
+//     console.log("You are still young");
+// }
+// else{
+//     console.log("You rock");
+// }
