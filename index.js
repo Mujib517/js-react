@@ -1,116 +1,89 @@
-// Conditional statemets
-// if else, Switch, 
-// Conditionl operators (<,>,>=,<=,==,===,!=)
-// Logical Operators &&, || , !
-// ++, --
-// Arrays
-// loops
+// Objects
+// Properties Operations
+// domain model
 
-var x = 10;
-var y = 20;
-
-var z = --y;
-console.log("z,y", z, y);
+var person={
+    name:"Mujib",
+    DOJ: new Date(),
+    role:"Senior Software Engineer",
+    salary: 2000,
+    'my property': 'akjakdjfkj'
+};
 
 
-// console.log(    x <=10 && y < 20 && z<=20 && w <10   ); // short hand evaluations
-// console.log(    x <=10 || y< 20   );
+//dot notation
+//bracket notation
 
-
-// var married=false; 
-
-// console.log("Mairred", !married );
-
-
-/*
-  Truth Tables
-
-  P     Q       P&Q     P|Q     !P
-  0     0       0       0       1
-  0     1       0       1       1
-  1     0       0       1       0
-  1     1       1       1       0
-
-*/
-
-// var marks1 = 50;
-// var marks2 = 80;
-// var marks3 = 90;
-// var marks4 = 100;
-// var marks5 = 80;
-// holes 
-
-// var marks = [50, 80, 90, 100, 80]; //list, 0
-
-// marks[5]= 100;
-
-// for(var i=0;  i < marks.length; i++){
-//     console.log(  marks[i]   );
+//reflection for-in
+// for(var key in person){ //name, doj, salary, 
+//     console.log(  person[key]  );
 // }
 
 
+// console.log( person["my property"] );
+// console.log ( person["name"]  );
+// console.log ( person["salary"]  );
 
-//loop variant
-// condition
-// increment
 
-//init, condition, logic, inc 
-// for ( var i=0; i<5; i++){
-//     console.log(i);
+// person.name = "Abc";
+
+
+// console.log( person.name );
+// console.log( person.salary );
+
+
+
+// function add(a, b) {
+//     if (typeof a == 'function') a = a();
+//     if (typeof b == 'function') b = b();
+
+//     console.log(a + b);
 // }
 
 
+// add(10, 20);
+// add("Mujeeb", " Rahman");
+// add([1, 2, 3], [4, 5, 6]);
 
-//push
-
-// marks.pop();
-
-// marks.splice(2,1);
-
-// var newMarks = marks.slice(2,4);
-
-// console.log(marks);
-// console.log(newMarks);
-
-// console.log("Subject1", marks[0]);
-// console.log("Subject2", marks[1]);
-// console.log("Subject3", marks[2]);
-// console.log("Subject4", marks[3]);
-
-
-// var age = 40;
-// var age2 = 50;
-
-// var res = age == age2;
-
-// console.log(res);
-
-
-
-// switch (age) {
-//     case 10:
-//         console.log("You are a kid");
-//         break;
-//     case 20:
-//         console.log("You are young");
-//         break;
-//     case 30:
-//         console.log("You are still young");
-//         break;
-//     default:
-//         console.log("You rock");
-//         break;
+// function first() {
+//     return 100;
 // }
 
-// if(age==10){
-//     console.log("You are a kid");
+// function second() {
+//     return 200;
 // }
-// else if (age == 20){
-//     console.log("You are young");
-// }
-// else if(age==30){
-//     console.log("You are still young");
-// }
-// else{
-//     console.log("You rock");
-// }
+
+// add(first, second);
+// add(200, second);
+// add(200, "Abc");
+
+// //Alt+Shift+F
+// // Option + Shift + F
+// add(function() {
+//     return 10;
+// }, function () {
+//     return 20;
+// })
+
+// // higher order function
+// // Loosely typed
+// //Ternary operator
+
+// // var age = 10;
+
+// // // var label;
+
+// // if(age==10){
+// //     lable="Kid";
+// // }
+// // else if(age==20){
+// //     label="Young";
+// // }
+// // else{
+// //     label="Rock";
+// // }
+
+// // var label = age == 10 ? "Kid": (age == 20 ? "Young": "Rock");
+
+
+// //  var label = (age == 10) ? "Kid" : "Young"; //compact
