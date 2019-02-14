@@ -1,89 +1,58 @@
-// Objects
-// Properties Operations
-// domain model
+//Strings
+var name = "Joseph";
+var res = name.concat(' adfad', ' one', ' two');
 
-var person={
-    name:"Mujib",
-    DOJ: new Date(),
-    role:"Senior Software Engineer",
-    salary: 2000,
-    'my property': 'akjakdjfkj'
-};
+// console.log(name);
+// console.log(res);
+
+//slice,replace,split
+ var str = "Please locate where 'locate' occurs!";
+// var pos = str.search("locate");
+// console.log(pos);
+
+// var newStr=str.slice(0,6);
+// console.log(newStr);
+
+// var str2=str.replace("locate","location");
+// console.log(str2);
+
+// str= "Joseph";
+// var res= str.split('');
+// console.log(res);
+//a 97 b 
+// console.log(   str.charCodeAt(2)   );
 
 
-//dot notation
-//bracket notation
+//sub string
+// var res=name.substr(1,13);
+// console.log(res);
 
-//reflection for-in
-// for(var key in person){ //name, doj, salary, 
-//     console.log(  person[key]  );
+//indexOf
+// var res= name.indexOf('o');
+// if(res===-1) console.log("Couldn't find ");
+// else console.log("found");
+
+//lastIndexOf
+// name = "abbaab";
+// var res= name.lastIndexOf('aab');
+// console.log(res);
+
+// for(var i=0;i<name.length;i++){
+//     console.log(name[i]);
 // }
 
 
-// console.log( person["my property"] );
-// console.log ( person["name"]  );
-// console.log ( person["salary"]  );
+//F5, F10, F11
+var arr=[1,2,3,4,5];
+
+for(var i=0;i< arr.length;i++){
+    print(arr[i]);
+}
+
+function print(val){
+    console.log(val);
+}
 
 
-// person.name = "Abc";
 
 
-// console.log( person.name );
-// console.log( person.salary );
-
-
-
-// function add(a, b) {
-//     if (typeof a == 'function') a = a();
-//     if (typeof b == 'function') b = b();
-
-//     console.log(a + b);
-// }
-
-
-// add(10, 20);
-// add("Mujeeb", " Rahman");
-// add([1, 2, 3], [4, 5, 6]);
-
-// function first() {
-//     return 100;
-// }
-
-// function second() {
-//     return 200;
-// }
-
-// add(first, second);
-// add(200, second);
-// add(200, "Abc");
-
-// //Alt+Shift+F
-// // Option + Shift + F
-// add(function() {
-//     return 10;
-// }, function () {
-//     return 20;
-// })
-
-// // higher order function
-// // Loosely typed
-// //Ternary operator
-
-// // var age = 10;
-
-// // // var label;
-
-// // if(age==10){
-// //     lable="Kid";
-// // }
-// // else if(age==20){
-// //     label="Young";
-// // }
-// // else{
-// //     label="Rock";
-// // }
-
-// // var label = age == 10 ? "Kid": (age == 20 ? "Young": "Rock");
-
-
-// //  var label = (age == 10) ? "Kid" : "Young"; //compact
