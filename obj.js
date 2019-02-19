@@ -23,6 +23,14 @@ var person2 = {
 var arr = [{ name: 'obj1' }, { name: 'obj2' }, { name: 'obj3' }];
 
 for (var i = 0; i < arr.length; i++) {
-    var obj=arr[i];
-    console.log( obj.name  );
+    var obj = arr[i];
+    console.log(obj.name);
 }
+
+// function fizzBuzz(n) {
+//     if (n === 0) return;
+
+//     if (n % 3 === 0 && n % 5 === 0) console.log("FizzBuzz");
+//     else if (n % 3 === 0) console.log("Fizz");
+//     else if (n % 5 === 0) console.log("Buzz");
+// }
