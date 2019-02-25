@@ -6,16 +6,26 @@
 // let: Block scoped
 // const: Block scoped
 //string interpolation
+// lamdas or arrow functions
 
+// function add(a) {
+//     a++;
+//     b++;
+//     return a + 10;
+// }
 
-var name = "John";
-var age = 20;
+// (a, b) => a + b;
 
-// var str = name + " is " + age + " years old";
-var str = `${name} is ${age} years old`;
-console.log(str);
+// a => a + 10;
 
+// () => console.log("hello");
 
+// var name = "John";
+// var age = 20;
+
+// // var str = name + " is " + age + " years old";
+// var str = `${name} is ${age} years old`;
+// console.log(str);
 // function fn() {
 
 //     if (true) {
