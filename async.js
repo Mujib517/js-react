@@ -1,6 +1,18 @@
 //asyncronous js
 // synchronous 
 // single threaded
+// non blocking
+
+// asyncronous operations:
+// 1. timers (setTimeout, setInterval)
+// 2. db operations
+// 3. File read/write
+// 4. Web svc calls
+
+
+// setInterval(function () {
+//     console.log("hello");
+// }, 1000);
 
 // function add(a, b) {
 //     a++;
@@ -28,8 +40,6 @@ function addAsync(a, b, done) {
 
     // console.log("execution stopped");
 }
-
-
 
 
 //entity 1
